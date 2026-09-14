@@ -2,20 +2,35 @@
 
 ## Background
 
-[Describe the broader context. What domain or industry does this problem belong to? What situation creates the problem?]
+[Healthcare for elderly people often involves a connected sequence of care activities, including doctor consultations, diagnostic tests, test reports, referrals, and follow-up appointments.
+For elderly people living alone, caregivers and care teams may not always be able to continuously monitor whether every expected step in this journey has been completed.]
 
 ## The Problem
 
-[State the problem clearly and specifically. Avoid vague statements like "things are slow" — instead say "Operations teams spend an average of 45 minutes per incident diagnosing pipeline failures because logs are scattered across 6 different tools."]
+[Healthcare for elderly people often involves a chain of connected steps—consultations, tests, reports, and follow-ups—but a missed step can easily go unnoticed when no one is continuously monitoring the entire journey. Elderly patients living alone, along with their caregivers and healthcare providers, face the risk of these unnoticed care gaps leading to delays or interrupted care.]
 
 ## Who is Affected
 
-[Describe the specific user or persona experiencing this problem. Be concrete — not "developers" but "backend engineers managing CI/CD pipelines in enterprises with 50+ microservices."]
+[The problem primarily affects:
+
+- Elderly people living alone who may miss important healthcare follow-ups or next steps.
+- Family members and caregivers who need visibility into an elderly person's ongoing care journey.
+- Healthcare and care teams who need to identify incomplete or delayed care processes.]
 
 ## Why It Matters
 
-[What is the cost of this problem? Lost time? Revenue? Safety risk? Frustration? Quantify if possible.]
+[A missed or delayed healthcare-process step can interrupt continuity of care and may cause important follow-ups, reviews, tests, or referrals to remain unresolved.
+
+The impact is especially significant for elderly people who may not have someone continuously monitoring their complete healthcare journey.
+
+A system that identifies these gaps early can provide better visibility and allow caregivers or care teams to review the situation before the gap goes unnoticed for longer.]
 
 ## Why Existing Solutions Fall Short
 
-[Briefly explain what people currently do and why it doesn't fully solve the problem. This sets up why your solution is needed.]
+[Traditional reminder systems notify users about individual tasks that are already known.
+
+However, they generally do not understand the relationships between multiple healthcare events or determine whether the expected sequence of care has actually been completed.
+
+For example, a reminder may say "Follow-up appointment due," but it may not understand that the follow-up became relevant because a specific report was completed earlier.
+
+CareSentinel addresses this gap by monitoring the complete care journey, comparing expected care-process steps with actual events, and identifying where the journey breaks. Our AI analysis the whole process . ]

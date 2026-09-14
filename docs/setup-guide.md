@@ -4,20 +4,20 @@
 
 ## Prerequisites
 
+Prerequisites
+
 Before you begin, ensure you have the following installed:
 
-- [ ] [e.g., Python 3.11+]
-- [ ] [e.g., Node.js 18+]
-- [ ] [e.g., Docker Desktop]
-- [ ] [e.g., An IBM Cloud account with watsonx.ai access]
+ [Python 3.10 or newer]
+ [Git]
+ [A modern web browser]
+ [An IBM Cloud account with watsonx.ai access]
 
 ## Environment Variables
 
-Copy `.env.example` to `.env` and fill in the values:
+IBM watsonx.ai is optional for the local demonstration.
 
-```bash
-cp .env.example .env
-```
+If you want to enable IBM watsonx.ai / IBM Granite runtime analysis, create a .env file based on .env.example and configure the following values:
 
 | Variable | Description | Required |
 |---|---|---|
@@ -30,40 +30,72 @@ cp .env.example .env
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[your-org]/[your-repo].git
-cd [your-repo]
+git clone https://github.com/Bhavya09cyber/bob-ai-hackathon--NeuraLops-.git
+cd bob-ai-hackathon--NeuraLops-
 
 # 2. Install backend dependencies
-[your command — e.g.: pip install -r requirements.txt]
+[pip install -r requirements.txt
+]
 
 # 3. Install frontend dependencies (if applicable)
 [your command — e.g.: cd frontend && npm install]
 
 # 4. Set up the database (if applicable)
-[your command — e.g.: python manage.py migrate]
+[SQLite is already included with the project.
+]
 ```
 
 ## Running the Application
 
 ```bash
 # Start the backend
-[your command — e.g.: uvicorn app.main:app --reload]
+[python backend/app.py]
 
 # Start the frontend (in a separate terminal, if applicable)
 [your command — e.g.: cd frontend && npm run dev]
 ```
 
-The application will be available at: `http://localhost:[PORT]`
+The application will be available at: `http://127.0.0.1:5000`
 
 ## Running Tests
 
 ```bash
-[your test command — e.g.: pytest tests/ -v]
+[python -m py_compile backend/app.py backend/database.py backend/models.py backend/gap_detector.py backend/ai_analyzer.py backend/seed_data.py]
 ```
 
 ## Quick Demo (Optional)
+After starting the application:
 
-If you have a demo script or sample data to showcase the project quickly:
+Open the Patients page.
+Select Margaret Thompson.
+Open her Care Journey.
+Review the sequence:
+Doctor consultation
+Test ordered
+Test completed
+Report available
+Notice that the expected follow-up step is missing.
+Open the Alerts page.
+Review the high-priority care-gap alert.
+Review the AI Care-Process Analysis explaining how the gap was detected.
+Open Robert Davies to see a complete care journey with no open care gap.
+
+Document Upload Demo
+
+CareSentinel supports healthcare document processing for:
+
+PDF
+TXT
+DOCX
+
+To demonstrate document processing:
+
+Open the Upload Document page.
+Select a supported document.
+Upload the document for the selected patient.
+The system stores the uploaded document metadata.
+Relevant care-process information can be extracted as healthcare events.
+The extracted events can be included in the patient's care journey and care-gap detection.
 
 ```bash
 [e.g.: python demo/seed_demo_data.py]
@@ -74,6 +106,6 @@ If you have a demo script or sample data to showcase the project quickly:
 
 | Issue | Solution |
 |---|---|
-| [e.g., `ModuleNotFoundError`] | [e.g., Run `pip install -r requirements.txt` again] |
-| [e.g., Database connection refused] | [e.g., Ensure PostgreSQL is running: `docker compose up db`] |
-| [e.g., watsonx.ai 401 error] | [e.g., Check `WATSONX_API_KEY` in your `.env` file] |
+| [ModuleNotFoundError: flask] | [Run pip install -r requirements.txt from the src directory.] |
+| [IBM watsonx.ai authentication error] | [Check WATSONX_APIKEY and WATSONX_PROJECT_ID in your local environment configuration.] |
+| [Document upload does not work] | [Verify that the document is PDF, TXT, or DOCX and that the required dependencies are installed.] |

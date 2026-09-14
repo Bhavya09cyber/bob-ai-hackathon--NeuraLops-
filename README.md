@@ -1,4 +1,4 @@
-# 🚀 [Your Project Title Here]
+# 🚀 [CareSentinel: Intelligent AI Based Healthcare Journey Monitoring & Care Gap Detection]
 
 > ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
 
@@ -8,10 +8,10 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Name** | [NeuraLops] |
+| **Track** | [AI] |
+| **Team Lead** | [Bhavya Shah] — [25ce108@charusat.edu.in] |
+| **Members** | [Vidhan Shah], [Richa Shah], [Vaidehi Shah] |
 
 ---
 
@@ -19,25 +19,25 @@
 
 > In 2–3 sentences: What problem does your project solve? Who experiences this problem?
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
-
+Healthcare for elderly people often involves a chain of connected steps—consultations, tests, reports, and follow-ups—but a missed step can easily go unnoticed when no one is continuously monitoring the entire journey. Elderly patients living alone, along with their caregivers and healthcare providers, face the risk of these unnoticed care gaps leading to delays or interrupted care.
 ---
 
 ## 💡 Solution
 
 > In 2–3 sentences: What did you build? How does it solve the problem above?
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+CareSentinel creates a living timeline of a patient's healthcare journey, connecting consultations, tests, reports, follow-ups, and other care events into one continuous view. AI understands the expected sequence and relationships between these events, identifies completed, pending, delayed, or missing steps, and detects where the patient's care journey may have broken down. It transforms scattered healthcare events into an understandable, continuously monitored care journey.
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+-**AI-Powered Care Journey Timeline:** Creates a continuous timeline of consultations, tests, reports, follow-ups, and other care events.
+- **Expected vs Actual Care Comparison:** Compares the expected sequence of care events with the events actually recorded.
+- **Care-Gap and Dependency Detection:** Identifies missing, delayed, or incomplete care-process steps and their dependencies.
+- **Explainable Care-Gap Alerts:** Explains where the care journey broke and why the system detected a gap.
+- **AI-Powered Journey Insights:** Provides an understandable summary of the patient's care journey, open gaps, and expected next steps.
+
 
 ---
 
@@ -45,29 +45,37 @@
 
 | Category | Technologies |
 |---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+| **Languages** | [Python, JavaScript, HTML, CSS] |
+| **Frameworks** | [Flask] |
+| **IBM Technologies** | [IBM Bob , IBM watsonx.ai, IBM Granite]|
+| **Databases** | [SQLite] |
+| **Other** | [GitHub, REST API, PDF document upload, Windows Batch] |
 
 ---
 
 ## 📁 Repository Structure
 
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
+```text
+├── src/                       # All source code
+│   ├── backend/               # Flask backend and care-gap detection
+│   ├── frontend/              # HTML, CSS and JavaScript frontend
+│   ├── requirements.txt       # Python dependencies
+│   ├── start.bat              # Windows startup script
+│   └── .env.example           # Environment variable template
+├── docs/                      # Written documentation
 │   ├── problem-statement.md
 │   ├── solution-overview.md
 │   ├── architecture.md
 │   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
-```
+├── demo/                      # Demo artifacts
+│   ├── screenshots/            # App screenshots
+│   ├── sample_care_report.txt
+│   ├── demo-video-link.txt     # Link to demo video
+│   └── live-demo-url.txt       # Live demo information
+├── presentation/              # Slide deck
+├── submission.yaml            # Structured submission metadata
+├── README.md                  # Project overview
+└── CONTRIBUTING.md             # Submission guidelines
 
 ---
 
@@ -76,19 +84,18 @@
 > **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+# 1. Clone the repository
+git clone https://github.com/Bhavya09cyber/bob-ai-hackathon--NeuraLops-.git
+cd bob-ai-hackathon--NeuraLops-
 
-# 2. Install dependencies
-[your install command here]
+# 2. Install backend dependencies
+[pip install -r requirements.txt
+]
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
+
 
 # 4. Run the project
-[your run command here]
+[python backend/app.py]
 ```
 
 ---
@@ -108,14 +115,15 @@ cp .env.example .env
 
 > Be honest — judges appreciate transparency over overclaiming.
 
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+[AI runtime analysis requires IBM watsonx.ai credentials for live IBM Granite inference.]
+[The current prototype focuses on healthcare care-process monitoring rather than medical diagnosis or treatment decisions.]
+[The demonstration uses synthetic patient data.]
+[The current prototype is intended as a hackathon demonstration and is not a production healthcare system.]
 
 ---
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+[CareSentinel goes beyond conventional reminder systems by understanding the expected sequence of healthcare events rather than treating each task as an isolated reminder. It detects where the care journey breaks, identifies the missing or delayed care-process step, and provides an explainable alert showing how the gap was detected. This makes the system focused on care continuity and gap detection, not just task reminders.]
 
 ---

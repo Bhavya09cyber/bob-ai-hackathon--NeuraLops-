@@ -1,47 +1,57 @@
-# Source Code
-
-Place all your project's source code in this folder.
+Place all CareSentinel project's source code in this folder.
 
 ## Structure Guidelines
 
-Organize your code logically. Here are common patterns — use whatever fits
-your project:
+CareSentinel is a web application with a Flask backend and HTML/CSS/JavaScript frontend.
 
-### Web Application
-```
+```text
 src/
-  backend/        ← API server code
-  frontend/       ← UI code
-  shared/         ← Shared utilities/types
-```
-
-### Data / AI Project
-```
-src/
-  data/           ← Data ingestion / preprocessing
-  models/         ← ML model code
-  api/            ← Serving layer
-  notebooks/      ← Jupyter notebooks (exploration)
-```
-
-### CLI / Script-based Tool
-```
-src/
-  cli/            ← CLI entry points
-  lib/            ← Core logic
-  utils/          ← Helpers
-```
+├── backend/              ← Flask API server and core application logic
+│   ├── app.py            ← Main Flask application and REST APIs
+│   ├── database.py       ← SQLite database setup and operations
+│   ├── models.py         ← Data models
+│   ├── gap_detector.py   ← Care-gap detection logic
+│   ├── ai_analyzer.py    ← IBM watsonx.ai / Granite AI analysis
+│   ├── seed_data.py      ← Synthetic demonstration data
+│   ├── data/             ← SQLite database
+│   └── uploads/          ← Uploaded healthcare documents
+│
+├── frontend/             ← CareSentinel user interface
+│   ├── index.html
+│   ├── patients.html
+│   ├── patient.html
+│   ├── journey.html
+│   ├── alerts.html
+│   ├── documents.html
+│   ├── upload.html
+│   ├── add-event.html
+│   ├── settings.html
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       ├── api.js
+│       ├── alerts.js
+│       ├── timeline.js
+│       └── upload.js
+│
+├── requirements.txt      ← Python dependency manifest
+├── start.bat             ← Windows startup script
+├── .env.example          ← Environment variable template
+└── README.md             ← Source code documentation
 
 ## Important Files to Include
 
-- `requirements.txt` or `package.json` — dependency manifest
-- `.env.example` — template for environment variables (NEVER commit `.env`)
-- Any database migration files
-- Configuration files
+requirements.txt — Python dependencies required by the Flask backend
+.env.example — Template for IBM watsonx.ai environment variables
+start.bat — Windows script for installing dependencies and starting the application
+backend/data/caresentinel.db — SQLite demonstration database
+backend/uploads/ — Directory for uploaded healthcare documents
 
 ## What NOT to Include in src/
 
-- `.env` files with real secrets
-- Large binary files (use Git LFS or link externally)
-- `node_modules/` or `venv/` (these are in `.gitignore`)
-- Build artifacts (`dist/`, `build/`, `__pycache__/`)
+.env files containing real IBM credentials or secrets
+__pycache__/
+.venv/ or venv/
+node_modules/
+Build artifacts such as dist/ or build/
+Other unnecessary generated files
