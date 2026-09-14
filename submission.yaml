@@ -36,11 +36,12 @@ submission:
 
   key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
                                 # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-"AI identifies potential gaps in a patient's care journey and AI provides evidence-based explanations for detected gaps and alerts"
-"Smart Priority / Severity"
-"Expected vs actual care comparison"
-"AI reduces manual monitoring for caregivers"
-"AI-Powered Care Journey Timeline"
+  key_features:
+    - "AI-powered care journey timeline"
+    - "Expected vs actual care comparison"
+    - "Care-gap and dependency detection"
+    - "Explainable care-gap alerts"
+    - "AI-powered journey insights"
 
   tech_stack:
     languages: [Python,HTML,CSS,JavaScript]                      # REQUIRED — e.g., ["Python", "TypeScript"]
