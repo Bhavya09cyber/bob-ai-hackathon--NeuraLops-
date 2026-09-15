@@ -107,7 +107,7 @@ cd bob-ai-hackathon--NeuraLops-
 | 📹 Demo Video | [https://drive.google.com/file/d/1ePm5mMIitHJbL92ZgSGSmUVkyriwLKx2/view?usp=sharing](demo/demo-video-link.txt) |
 | 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
 | 🖼️ Screenshots | [demo/screenshots/landing page.jpg](demo/screenshots/) |
-| 📊 Presentation | [c:\Users\HP\OneDrive\Documents\slides.pdf](presentation/) |
+| 📊 Presentation | [https://drive.google.com/file/d/1s1Hf-J734_YKDZmLmER3SwUygozKQaSo/view?usp=sharing](presentation/) |
 
 ---
 
