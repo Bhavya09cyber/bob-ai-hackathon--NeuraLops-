@@ -68,7 +68,8 @@ artifacts:
   source_code: "src/"
   setup_guide: "docs/setup-guide.md"
   architecture_doc: "docs/architecture.md"
-  demo_video: "demo/demo-video-link.txt"   # URL to hosted video (YouTube, Loom, Box)
+  demo_video: "https://youtu.be/hFABmCw42eY?si=yC8dK7C7PmFS10gd"   # URL to hosted video (YouTube, Loom, Box)
   live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
-  screenshots: "demo/screenshots/"
+  screenshots: "demo/screenshots/landing page.jpg"
   presentation: "presentation/"
+
