@@ -71,5 +71,5 @@ artifacts:
   demo_video: "https://youtu.be/hFABmCw42eY?si=yC8dK7C7PmFS10gd"   # URL to hosted video (YouTube, Loom, Box)
   live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
   screenshots: "demo/screenshots/landing page.jpg"
-  presentation: "presentation/"
+  presentation: "c:\Users\HP\OneDrive\Documents\slides.pdf"
 

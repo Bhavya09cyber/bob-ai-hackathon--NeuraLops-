@@ -1,6 +1,6 @@
 # Presentation
 
-Place your slide deck in this folder.
+[text](../../OneDrive/Documents/slides.pdf)
 
 ## Accepted Formats
 
