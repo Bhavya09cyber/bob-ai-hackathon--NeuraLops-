@@ -1,6 +1,5 @@
 # Presentation
 
-[text](../../OneDrive/Documents/slides.pdf)
 
 ## Accepted Formats
 
