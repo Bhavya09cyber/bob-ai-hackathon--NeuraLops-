@@ -6,10 +6,17 @@ Place your application screenshots in this folder.
 
 Name your screenshots sequentially so they appear in logical order:
 
-  01-landing-page.png       ← First thing a user sees
-  02-main-feature.png       ← Your primary feature in action
-  03-output-or-results.png  ← The result / value delivered
-  04-additional-feature.png ← Any other notable screen
+  01-landing-page.png
+  ![alt text](<landing page.jpg>)       ← First thing a user sees
+  02-main-feature.png  
+      ![alt text](features.jpg) 
+      ![alt text](features1.jpg)
+      ![alt text](features2.jpg)
+      ![alt text](features3.jpg)
+      ![alt text](features4.jpg)
+      ![alt text](features5.jpg)
+    ![alt text](features7-1.jpg)← Your primary feature in action
+  
 
 ## Requirements
 
